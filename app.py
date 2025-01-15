@@ -20,9 +20,10 @@ def retrieve():
     try:
         # Get the JSON data from the request
         request_data = request.get_json()
-        
+        print("hello")
         # Extract the query and optional k value from the request data
         query = request_data.get('query')
+        print("query")
         
         if not query:
             return jsonify({"error": "Query parameter is required", "status": 400}), 400
