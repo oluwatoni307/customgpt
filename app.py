@@ -39,7 +39,7 @@ def retrieve():
                 "items": items
             }
         }
-        return jsonify(data), 200
+        return jsonify(items), 200
     except Exception as e:
         return jsonify({"error": str(e), "status": 500}), 500
 
